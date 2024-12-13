@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "apotek-comp", sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    font-style: normal;
+    letter-spacing: .1em;
+}
+
+#navBar {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 100%; 
+    padding: 15px 20px; 
+    background-color: #b3b2b3; 
+    font-size: 2.5em;
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navLink:visited {
+    color: white; 
+}
+
+.navLink:hover {
+    color: rgb(0, 0, 0); 
+}
+
+
+#mainLogo {
+    height: auto;
+    width: 80%;
+    margin: 30px auto;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    color: #b3b2b3;
+    align-items: center;
+    font-size: 3rem;
+    gap: 20px;
+}
+
+#home p {
+    font-size: 1.8em;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    font-size: 2.3em;
+}
+
+#projects p {
+    margin: 20px;
+}
+
+#projects img {
+    margin-top: 30px;
+    height: auto;
+    width: 95%;
+}
+
+#residential, #commercial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logoStacked {
+    max-width: 300px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b3b2b3;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    font-size: 1.8em;
+}
+
+#aboutTitle, #missionTitle, #visionTitle {
+    color: black;
+}
+
+#aboutTextAll {
+    max-width: 600px;
+    text-align: left;
+    margin-right: 10%;
+}
+
+#formImage {
+    max-width: 180px;
+    height: auto;
+}
+
+#contact {
+    font-size: 1.5em;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#projects, #contact {
+    background-color: black;
+    color: #b3b2b3;
+}
+
+#footer {
+    color: #b3b2b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 320px) {
+    #navBar {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #home {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logoStacked {
+        width: 80%;
+    }
+
+    #aboutTextAll {
+        max-width: 90%;
+    }
+
+    #footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    #navBar {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    #home {
+        font-size: 2.5rem;
+    }
+
+    #projects {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #about {
+        flex-wrap: wrap;
+    }
+
+    #aboutTextAll {
+        max-width: 80%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    #navBar {
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #projects img {
+        width: 90%;
+    }
+
+    #about {
+        justify-content: space-between;
+    }
+
+    #logoStacked {
+        width: 40%;
+    }
+
+    #aboutTextAll {
+        max-width: 600px;
+    }
+}
+
+/* Regular Desktop */
+@media screen and (min-width: 1281px) {
+    #navBar {
+        justify-content: space-between;
+    }
+
+    #projects img {
+        width: 85%;
+    }
+
+    #about {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    #logoStacked {
+        width: 30%;
+    }
+
+    #aboutTextAll {
+        max-width: 50%;
+    }
+}
