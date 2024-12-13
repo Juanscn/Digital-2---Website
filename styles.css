@@ -16,6 +16,14 @@ body {
     letter-spacing: .1em;
 }
 
+main {
+    text-align: left; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 #navBar {
     display: flex;
     justify-content: flex-start; 
@@ -23,7 +31,7 @@ body {
     width: 100%; 
     padding: 15px 20px; 
     background-color: #b3b2b3; 
-    font-size: 2.5em;
+    font-size: 2.3em;
 }
 
 .navLink {
@@ -41,7 +49,6 @@ body {
     color: rgb(0, 0, 0); 
 }
 
-
 #mainLogo {
     height: auto;
     width: 80%;
@@ -58,7 +65,7 @@ body {
 }
 
 #home p {
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 #projects {
@@ -79,10 +86,30 @@ body {
     width: 95%;
 }
 
+h1 {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+#residential a {
+    text-decoration: none;
+    color: inherit; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
 #residential, #commercial {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#hikari {
+    background-color: black;
+    color: #b3b2b3;
 }
 
 #logoStacked {
