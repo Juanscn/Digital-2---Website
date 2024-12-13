@@ -93,6 +93,13 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    text-align: center;
+    font-size: 2em;
+    background-color: black;
+    color: #b3b2b3;
+}
+
 #residential a {
     text-decoration: none;
     color: inherit; 
@@ -110,6 +117,11 @@ h1 {
 #hikari {
     background-color: black;
     color: #b3b2b3;
+}
+
+.hikariPic {
+    width: 300px;
+    height: 300px;
 }
 
 #logoStacked {
